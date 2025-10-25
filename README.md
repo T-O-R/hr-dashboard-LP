@@ -2,39 +2,50 @@ Special thanks to Baraa Khatib Salkini for the tutorial that guided the dashboar
 **Project:** Interactive Tableau dashboard for HR
 
 # hr-dashboard-LP (learning project)
-A polished, dark-themed HR dashboard - Overview workspace (Overview / Demographics / Income) and Employee List detailed. 
+A polished, dark-themed HR dashboard - Overview workspace (Overview / Demographics / Income) and Employee List details. 
 Designed for HR managers to get fast executive insight and then drill to individual employees.
 
 ## Overview
 A compact, interactive HR dashboard that gives HR managers a fast executive snapshot plus drill-down employee detail. 
 The workbook is organized into Summary (Overview, Demographics, Income) and Employee Records tabs so users can move from high-level trends to individual records.
 
-![lego-report](screenshots/short-interactivity.gif)
+![hr-dashboard-LP](images/hr-dashboard.gif)
 
-## Key Features
-- **KPI Overview:** Total Sales, Total Profit, Total Quantity — current year vs prior year.  
-- **Monthly Trends:** Monthly breakdowns for KPIs with highest/lowest months highlighted.  
-- **Product Subcategory Comparison:** Side-by-side view of sales and profit by subcategory (YOY).  
-- **Weekly Trends:** Weekly sales & profit with average lines and highlight for above/below-average weeks.  
-- **Customer Insights:** Total customers, sales per customer, distribution of customers by number of orders, and Top-10 customers by profit (rank, orders, sales, profit, last order date).  
-- **Interactivity:** Year selector, category/subcategory filters, region/state/city filters, and clickable charts for drill-downs.
+## Landing / Overview
+- **KPI** tiles for Total Hired, Active Employees, and Terminated (current view).
+- Yearly **Hires vs Terminations** trend (small line charts).
+- **Departments** bar chart with terminated counts highlighted (red) and ability to drill to job titles.
+- **HQ vs Branches comparison** (HQ = New York) and a US map showing employee counts by city/state with point sizing.
+- Click any element to filter the entire summary area.
+
+## Demographics
+- **Gender ratio** (donut / stacked bar) with percent labels and separate male/female breakdowns.
+- **Age groups distribution** (cohort counts) and Education level bar chart.
+- **Education × Performance matrix** (grid/heatmap) showing performance rating distribution by education level.
+
+## Income Analysis
+- **Education & Gender** salary summary.
+- **Age vs Salary** scatter with department color-coding and trend lines; annotations for common roles (e.g., Sales Manager, Finance Manager).
+
+## Employee List
+- Wide, searchable employee list with columns: Employee ID, Full Name, Job Title, Department, Location (City / State), Salary, Status (Hired/Terminated), Hire/Termination dates, and Length of Employment (bars).
+- Powerful header filters: Employee ID/full name search, drop-downs for Gender, Age Group, Education Level, Department, Job Title, Location, Salary slider, Status, Year of Hire/Terminate, and Length of Hire slider.
+- Quick actions: row hover shows tooltips; click an employee to highlight on maps/charts; Export / CSV option available.
+
+## Interactions & UX
+- Global filters apply across both left summary and right details.
+- Hover tooltips with metric details, click-to-filter and cross-highlighting between charts, and a compact export button.
+- Default view emphasizes Overview KPIs and map, while the right panel stays visible for immediate record lookup.
 
 ## Files in this repository
-- `datasets/` — uncleaned sample dataset used for the dashboard  
+- `dataset/` — dataset used in this exercise  
 - `README.md` — this file  
-- `screenshots/` — images of the dashboard for quick preview
+- `images/` — icons, images used
+- `mockups.drawio` — mockup use in designing dashboard
 
 ## How to open / use
 1. click tableau publick link
-   link: tableau public (https://public.tableau.com/app/profile/rowel.andrew.legaspi/viz/SalesDashboard_17568891806350/SalesDashboard)
-
-## Design & UX notes
-- KPI cards show current year value and percent change vs prior year.  
-- Monthly line charts include markers for highest and lowest months for quick visual scanning.  
-- Weekly charts are split into two panes (Sales / Profit) with dashed lines to show average and colors to indicate above/below average performance.  
-- Product subcategory view uses horizontal bars for easy comparison and an adjacent profit bar to show margin impact.  
-- Top 10 customers panel includes rank, order count, sales, profit, and last order date to help identify high-value and dormant accounts.
-
+   link: tableau public - https://public.tableau.com/app/profile/rowel.andrew.legaspi/viz/HRdashboard-LP/HRSummary
 
 ## Contact
 Rowel Andrew Legaspi (Drew)  
