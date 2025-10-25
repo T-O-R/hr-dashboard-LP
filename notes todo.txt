@@ -1,0 +1,34 @@
+Color Schema
+Basic (#777777 #f5f5f5)
+custome (#d4a017 #de0000)
+
+Building Data Source >Building Charts >  Building Dashboards
+
+Building Data Source
+-collect data
+-connect data
+-build data model
+-check data quality
+-check data types
+-understand & explore
+
+Building Charts
+-Analyse Requirements & Choose Chart
+-Initial Format of Sheet
+-Create Calculated Field & Test
+-Build Chart
+-Format Chart
+
+Building Dashboards
+-Plan the Dashboard
+	-dashboard mockup
+	-container mockup
+-Create Container Structure
+-Put All together
+-Fixing Colors
+-Fix Text
+-Refine Charts
+-Fix Spacing (inner/outer spacing)
+-Fix tooltips
+-Add filters & legends
+-add logos & icons
